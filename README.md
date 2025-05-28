@@ -63,8 +63,10 @@ npm start
 Visit http://localhost:3000 to see the app in action.
 
 # 📽️ Demo Video
-Loom Video (Demo & Explanation)
-Include the Loom link here.
+
+Loom Video (Live Running of the Project)
+
+https://drive.google.com/file/d/1Fwt0pG8qkq-AyMS8_P_akbM_M5gKZPzt/view?usp=sharing
 
 # 👩‍💻 Contact
 Srishanmathi K
