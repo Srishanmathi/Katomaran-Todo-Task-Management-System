@@ -31,7 +31,7 @@ Katomaran Todo is a single-page interactive web application designed to help use
 -- Database: MongoDB with Mongoose
 
 # 🏗️ Architecture Diagram
-Include an image or link to your architecture diagram here (optional but recommended).
+![App Architecture](./assets/image.png)
 
 # 🧑‍💻 Setup Instructions
 1.Clone the Repository:
@@ -68,7 +68,7 @@ Include the Loom link here.
 
 # 👩‍💻 Contact
 Srishanmathi K
-🔗 LinkedIn
+🔗 https://www.linkedin.com/in/srishanmathi-k-a28879259/
 📧 srishanmathi2004@gmail.com
 
 # 🏁 Acknowledgements
