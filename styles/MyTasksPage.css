@@ -1,0 +1,48 @@
+/* src/pages/styles/MyTasksPage.css */
+
+/* ... (previous styles) ... */
+
+.loading-message, .error-message, .no-tasks-message { /* Added .no-tasks-message here */
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.loading-message {
+  color: #1a73e8;
+}
+
+.error-message, .auth-error p {
+  color: #dc3545; /* Red for errors */
+}
+
+.no-tasks-message { /* Specific style for no tasks message */
+  color: #666;
+  background-color: #f0f7fa; /* Light grey/blue background */
+  font-style: italic;
+}
+
+
+.auth-error {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #fce8e6; /* Light red background for auth error */
+}
+
+.back-to-login-link {
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* ... (responsive adjustments) ... */

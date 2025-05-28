@@ -1,0 +1,62 @@
+/* src/components/styles/TaskList.css */
+
+.task-list-container {
+  margin-top: 2.5rem; /* Space from the form above */
+  background-color: #fcfdfe; /* Very light background for the list section */
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03); /* Subtle inner shadow */
+}
+
+.task-list-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3f51b5; /* A pleasant blue for the heading */
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center the heading */
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #e0e0e0; /* Dashed separator */
+}
+
+.no-tasks-message {
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  padding: 2rem 0;
+  background-color: #f0f4f7;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Grid for task items */
+.task-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between grid items */
+}
+
+/* Responsive adjustments for TaskList */
+@media (max-width: 768px) {
+  .task-list-container {
+    padding: 1.2rem;
+  }
+
+  .task-list-heading {
+    font-size: 1.6rem;
+  }
+
+  .task-items-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-list-heading {
+    font-size: 1.4rem;
+  }
+
+  .task-list-container {
+    padding: 1rem;
+  }
+}

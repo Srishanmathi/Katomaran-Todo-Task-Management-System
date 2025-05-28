@@ -1,0 +1,241 @@
+/* src/pages/styles/Dashboard.css */
+
+/* --- General Layout & Background --- */
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e3f2fd, #bbdefb); /* Soft blue gradient */
+  padding: 1.5rem; /* Consistent padding around the whole page */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligns content wrapper to top */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.dashboard-content-wrapper {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  max-width: 900px;
+  width: 100%;
+  margin-top: 2rem; /* Space from the top edge of the viewport */
+  margin-bottom: 2rem; /* Space from the bottom edge */
+  box-sizing: border-box;
+}
+
+/* --- Header Section --- */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.dashboard-welcome-message {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a73e8;
+  margin: 0;
+  line-height: 1.2; /* Improve readability for long names */
+}
+
+.logout-button {
+  background-color: #ef5350;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+/* --- Quote Section --- */
+.quote-section {
+  background-color: #e0f7fa; /* Light cyan background */
+  border-left: 5px solid #00bcd4; /* Accent color bar */
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem; /* Space below the quote */
+  font-style: italic;
+  color: #00796b; /* Dark teal text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.quote-text {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #263238; /* Darker text for readability */
+}
+
+.quote-author {
+  font-size: 0.9rem;
+  color: #546e7a; /* Greyish blue for author */
+  text-align: right;
+  display: block; /* Ensures it's on its own line */
+}
+
+/* --- Section Heading (for Task Form) --- */
+.section-heading {
+  font-size: 1.7rem; /* Slightly larger heading for sections */
+  font-weight: 600;
+  color: #424242; /* Darker grey */
+  margin-bottom: 1.5rem; /* Space below heading */
+  text-align: left; /* Align to left */
+  border-bottom: 1px dashed #eceff1; /* Subtle dashed line */
+  padding-bottom: 0.5rem;
+}
+
+/* --- Task Form Section --- */
+.task-form-section {
+  margin-bottom: 2rem;
+  background-color: #f8fcfd;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* --- My Tasks Button --- */
+.my-tasks-button-container {
+  text-align: center;
+  margin-top: 2rem; /* Add margin above button */
+  margin-bottom: 1rem; /* Add margin below button */
+}
+
+.my-tasks-button {
+  background-color: #42a5f5;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  display: inline-block; /* Allows vertical margin and text-align to center it */
+}
+
+.my-tasks-button:hover {
+  background-color: #2196f3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Auth Error Message --- */
+.auth-error-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ef5350;
+  font-weight: 600;
+  background-color: #fff3e0;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .dashboard-content-wrapper {
+    padding: 1.5rem; /* Reduce padding on medium screens */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column; /* Stack header items on smaller screens */
+    align-items: flex-start; /* Align welcome message to left */
+    margin-bottom: 1.5rem;
+  }
+
+  .dashboard-welcome-message {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-bottom: 0.8rem; /* Space between welcome and logout button when stacked */
+  }
+
+  .logout-button {
+    width: 100%; /* Full width button on smaller screens */
+    padding: 0.6rem 1rem;
+  }
+
+  .quote-section {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .task-form-section {
+    padding: 1rem; /* Reduce padding for form section */
+    margin-bottom: 1.5rem;
+  }
+
+  .my-tasks-button-container {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .my-tasks-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 0.8rem; /* Less padding on very small screens */
+  }
+
+  .dashboard-content-wrapper {
+    padding: 1rem; /* Further reduce padding */
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .dashboard-welcome-message {
+    font-size: 1.6rem; /* Even smaller font on tiny screens */
+  }
+
+  .logout-button {
+    font-size: 0.9rem;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.3rem;
+  }
+
+  .task-form-section {
+    padding: 0.8rem;
+  }
+
+  .my-tasks-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

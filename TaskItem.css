@@ -1,0 +1,161 @@
+/* src/components/styles/TaskItem.css */
+
+.task-item-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-item-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-item-card.completed {
+  opacity: 0.8;
+  border-left: 5px solid #4CAF50;
+  background-color: #e8f5e9;
+}
+
+.task-item-content {
+  flex-grow: 1;
+}
+
+.task-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.7rem; /* Increased margin for details below */
+  word-break: break-word;
+}
+
+.task-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.7rem; /* Increased margin */
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* New styles for detail rows (Due Date, Status) */
+.task-detail-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem; /* Space between detail rows */
+    font-size: 0.9rem;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #666;
+    margin-right: 0.5rem;
+    min-width: 70px; /* Give labels a consistent width */
+}
+
+.detail-value {
+    color: #333;
+}
+
+.detail-value.overdue {
+    color: #dc3545; /* Red color for overdue dates */
+    font-weight: 600;
+}
+
+
+.task-status {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.3em 0.6em;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-pending {
+  background-color: #ffe0b2;
+  color: #e65100;
+}
+
+.status-completed {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.task-item-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.action-button.toggle-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.action-button.toggle-button:hover {
+  background-color: #1976D2;
+  transform: translateY(-1px);
+}
+
+.action-button.delete-button {
+  background-color: #F44336;
+  color: white;
+}
+
+.action-button.delete-button:hover {
+  background-color: #D32F2F;
+  transform: translateY(-1px);
+}
+
+/* --- Responsive Adjustments for TaskItem --- */
+@media (max-width: 600px) {
+  .task-item-card {
+    padding: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .task-title {
+    font-size: 1.1rem;
+  }
+
+  .task-description {
+    font-size: 0.9rem;
+  }
+
+  .task-detail-row {
+      font-size: 0.85rem;
+  }
+
+  .detail-label {
+      min-width: 60px;
+  }
+
+  .task-item-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .action-button {
+    width: 100%;
+    padding: 0.7rem;
+  }
+}
