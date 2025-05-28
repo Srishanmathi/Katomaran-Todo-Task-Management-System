@@ -36,7 +36,8 @@ Katomaran Todo is a single-page interactive web application designed to help use
 # 🧑‍💻 Setup Instructions
 1.Clone the Repository:
 
-git clone https://github.com/Srishanmathi/Katomaran-Todo-Task-Management-System/edit/main/README.md
+git clone
+https://github.com/Srishanmathi/Katomaran-Todo-Task-Management-System
 cd Katomaran-Todo-Task-Management-System
 
 2.Install Dependencies:
