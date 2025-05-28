@@ -6,7 +6,7 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC7lUqj9GoLzKH0nvbVVMkzd_xKtSKl7jo",
+  apiKey: "Place your API Key",
   authDomain: "todo-task-management-system.firebaseapp.com",
   projectId: "todo-task-management-system",
   appId: "1:959730446787:web:063576849d3270a4858d76",
