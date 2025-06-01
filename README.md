@@ -31,7 +31,7 @@ Katomaran Todo is a single-page interactive web application designed to help use
 -- Database: MongoDB with Mongoose
 
 # 🏗️ Architecture Diagram
-![App Architecture] image.png
+https://github.com/Srishanmathi/Katomaran-Todo-Task-Management-System/blob/main/image.png
 
 # 🧑‍💻 Setup Instructions
 1.Clone the Repository:
